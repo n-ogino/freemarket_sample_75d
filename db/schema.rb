@@ -26,9 +26,7 @@ ActiveRecord::Schema.define(version: 2020_05_21_063920) do
   end
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "genre"
-    t.string "subgenre"
-    t.string "detail"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "ancestry"
