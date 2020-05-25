@@ -1,2 +1,9 @@
 = render partial:"exhibition-header"
+
+= link_to '出品', new_product_path 
+%br
+.product_contents
+  = render @products
+
+
 = render partial:"exhibition-footer"
