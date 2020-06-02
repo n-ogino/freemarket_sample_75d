@@ -142,41 +142,42 @@
             background-size: 18px;
             padding-right: 30px;
           }
-          .displayNone {
-            display: none;
-          }
-          .tree {
-            z-index: 2;
-            position: absolute;
-            background-color: #fff;
-            width: 240px;
-            top: 40px;
-            .categoryTree {
+          &:hover {
+            color: blue;
+            .tree {
+              z-index: 2;
+              position: absolute;
               background-color: #fff;
-              display: flex;
-              flex-direction: column;
-              position: relative;
-              &__item {
-                > a{
-                  line-height: 40px;
-                  display: block;
-                  width: 240px;
-                  padding: 3px 8px 3px 5px;
-                  border-bottom: 1px solid #f8f8f8;
-                }
-              }
-              li {
+              width: 240px;
+              top: 40px;
+              .categoryTree {
+                background-color: #f5f5f5;
+                display: flex;
+                flex-direction: column;
                 position: relative;
-                > a {
-                  color: #333;
-                  text-decoration: none;
-                  line-height: 32px;
-                  background-position: center right;
-                  background-repeat: no-repeat;
-                  background-size: 18px;
-                  padding-right: 30px;
+                &__item {
+                  > a{
+                    line-height: 40px;
+                    display: block;
+                    width: 240px;
+                    padding: 3px 8px 3px 5px;
+                    border-bottom: 1px solid gray;
+                  }
                 }
               }
+            }
+          }
+          li {
+            position: relative;
+            > a {
+              color: #333;
+              text-decoration: none;
+              line-height: 32px;
+              background-position: center right;
+              background-repeat: no-repeat;
+              background-size: 18px;
+              padding-right: 30px;
+              display: none;
             }
           }
         }
@@ -200,6 +201,7 @@
     }
   }
 }
+
 
 //メイン
 .main {

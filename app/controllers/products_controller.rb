@@ -4,6 +4,9 @@ class ProductsController < ApplicationController
   before_action :set_card, only:[:purchase, :pay]
   before_action :move_to_login, only: [:purchase, :new, :edit, :destroy]
 
+  include CommonActions
+  before_action :set_categories, only: [:index]
+
   require 'payjp'
  
   def index
